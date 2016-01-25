@@ -15,6 +15,9 @@ function Address(street, city, state) {
   this.city = city;
   this.state = state;
 }
+Address.prototype.fullAddress = function() {
+  return this.street + ", " + this.city + ", " + this.state;
+}
 
 // =========================
 // User Interface Logic
